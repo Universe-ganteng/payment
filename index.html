@@ -1,62 +1,118 @@
-<!DOCTYPE html><html lang="id">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNIVERSE PAYMENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SKYVIEN Payment</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('background.png') no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('verse.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
+      padding: 30px 10px;
+      backdrop-filter: brightness(0.6);
     }
+
     .container {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      margin: 50px auto;
-      width: 90%;
-      max-width: 500px;
+      max-width: 420px;
+      margin: auto;
+      background-color: rgba(0, 0, 30, 0.75);
+      padding: 25px;
       border-radius: 15px;
+      box-shadow: 0 0 20px cyan;
+      border: 2px solid #00f0ff;
     }
-    h1 {
-      margin-bottom: 30px;
-    }
-    .payment-info {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
+
+    .qris-img {
+      width: 85%;
       margin: 10px 0;
-      background-color: #00aaff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
-      transition: background 0.3s;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00f0ff;
+      border: 2px solid #00f0ff;
     }
-    .btn:hover {
-      background-color: #008ecc;
+
+    .payment-text {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 5px;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+    }
+
+    .qris-caption {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #99f6ff;
+      font-style: italic;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+
+    .payment-box {
+      background-color: rgba(0, 255, 255, 0.1);
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      border: 1px solid #00f0ff;
+      text-align: left;
+    }
+
+    .payment-box b {
+      color: #00f0ff;
+    }
+
+    .link-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .link-btn {
+      background-color: #002e40;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+      border: 1px solid #00f0ff;
+      box-shadow: 0 0 8px #00f0ff;
+    }
+
+    .link-btn:hover {
+      background-color: #004f66;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>UNIVERSE PAYMENT</h1>
-    <div class="PAYMENT UNIVERSE">
-      <p><strong>DANA:</strong> 083141627276</p>
-      <p><strong>GOPAY:</strong> 083854908257</p>
-      <p><strong>OVO:</strong> 083141627276</p>
+    <h2>PAYMENT UNIVERSE ⚡</h2>
+    <p>Pilih metode pembayaran yang tersedia:</p>
+    <p class="payment-text">QRIS ALLPAY</p>
+    <p class="qris-caption">QRIS MINTA KE UNIVERSE</p>
+    <img src="qris.png" alt="QRIS ALLPAY" class="qris-img">
+
+    <div class="payment-box">
+      <b>DANA:</b> 083141627276 <br>
+      <b>GOPAY:</b> 083854908257 <br>
+      <b>OVO:</b> 083141627276 <br>
+      <b>A/N:</b> LEBIH LENGKAP PM ADMIN
     </div>
-    <a class="btn" href="https://wa.me/6283141627276">HUBUNGI UNIVERSE</a>
-    <a class="btn" href="https://chat.whatsapp.com/LvUJy4bIgp354xQeeUfVXg">MARKETPLACE UNIVERSE</a>
-    <a class="btn" href="https://whatsapp.com/channel/0029VbAWVy62kNFzFmB3EE2G">CHANNEL UNIVERSE</a>
+
+    <div class="link-buttons">
+      <a href="https://chat.whatsapp.com/LvUJy4bIgp354xQeeUfVXg" class="link-btn">MARKETPLACE UNIVERSE</a>
+      <a href="https://whatsapp.com/channel/0029VbAWVy62kNFzFmB3EE2G" class="link-btn">CHANNEL UNIVERSE</a>
+      <a href="https://wa.me/6283141627276?text=UNIVERSE+MINTA+QRIS" class="link-btn">MINTA QRIS KESINI</a>
+    </div>
   </div>
 </body>
 </html>
